@@ -1,0 +1,9 @@
+import duckduckgo
+timezoneList = [America/New_York, America/New_York]
+i = 0
+timeDct = {}
+for i in range (0, len(timezoneList)):
+	q = "time difference bst " + i
+	r = duckduckgo.query(q)
+	timeDif = r[6]
+	timeDct[exchangeCode[i]] = timeDif
